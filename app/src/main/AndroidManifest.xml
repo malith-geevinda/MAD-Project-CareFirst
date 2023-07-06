@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firebasekotlin"
+        tools:targetApi="31">
+
+        <activity android:name=".activity.ViewPharmacyProfileActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".activity.ViewCustomerProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DeleteCustomerProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PharmacyDashboardActivity"
+            android:exported="false" />
+        <activity android:name=".activity.CustomerDashboardActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activity.PharmacySignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.PharmacySignUpActivity"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".PharmacyDashboard" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".activity.CustomerSignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CustomerSignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FirstPageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PaymentInsertionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentFetchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PaymentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DrugInsertionActivity" />
+        <activity android:name=".activity.DrugFetchingActivity" />
+        <activity android:name=".activity.DrugDetailsActivity" />
+        <activity
+            android:name=".activity.DeliveryInsertionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryFetchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DeliveryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NavigationDrawer"
+            android:exported="false" />
+    </application>
+
+</manifest>
